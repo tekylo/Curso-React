@@ -3,8 +3,9 @@ import logo from './logo.svg';
 import Gretting from './Gretting'
 import Name, { ShowLastName } from './ShowName'
 import ShowDate from './ShowDate';
-import './App.css';
 import ShowMessage from './ShowMessage';
+import ShowComponentShowMessage from './ShowComponentShowMessage';
+import './App.css';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <ShowLastName />
         <ShowDate />
         <ShowMessage />
+        <ShowComponentShowMessage />
       </header>
     </div>
   );
