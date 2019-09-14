@@ -7,13 +7,14 @@ import ShowMessage from './ShowMessage';
 import ShowComponentShowMessage from './ShowComponentShowMessage';
 import Title from './html/title'
 import Text from './html/text'
+import List from './html/list'
+import ListItem from './html/listItem'
+import Link from './html/link'
+import Loading from './loading'
 import './App.css';
 
 const title = 'Necesito partir en componentes todo esto'
 const text = 'Para ello puedo usar React que me permitirá poder reutilizar todos esos componentes. Para ello tengo que:'
-const List = props => <ul>{ props.children }</ul>
-const ListItem = props => <li>{ props.children }</li>
-const Link = props => <a href = { props.to } target = { props.openInNewTab ? '_blank' : '' }> { props.children } </a>
 
 function App() {
   return (
@@ -27,7 +28,8 @@ function App() {
           <ListItem>Pensar en como puedo extraer cada trozo en componentes</ListItem>
           <ListItem>Usarlos en React</ListItem>
         </List>
-        <Link to = "https://reactjs.org/">React Docs</Link>
+        <Link to = "https://reactjs.org/" openInNewTab>React Docs</Link>
+        <Loading show = { true } />
         <Gretting />
         <Name />
         <ShowLastName />
