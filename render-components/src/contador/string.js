@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 class String extends Component {
     state = {
-        text: '',
+        text: 'a',
     }
 
     increment = () => {

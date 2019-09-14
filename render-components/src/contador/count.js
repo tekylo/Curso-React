@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import ButtonCount from './button'
 
 class Count extends Component {
     state = {
@@ -13,7 +14,7 @@ class Count extends Component {
         }))
 
         return count
-      }
+    }
 
       
     decrement = () => {
@@ -24,7 +25,7 @@ class Count extends Component {
         }))
 
         return count
-      }
+    }
     
 
     render() {
@@ -32,9 +33,9 @@ class Count extends Component {
         
         return (
             <>
-            <button onClick={ this.increment }>Incrementar</button>
+            <ButtonCount onPress = { this.increment }>Incrementar</ButtonCount>
             <div>{ count }</div>
-            <button onClick={ this.decrement }>Decrementar</button>
+            <ButtonCount onPress = { this.decrement }>Decrementar</ButtonCount>
             </>
         )
     }
