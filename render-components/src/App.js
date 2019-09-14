@@ -11,6 +11,7 @@ import List from './html/list'
 import ListItem from './html/listItem'
 import Link from './html/link'
 import Loading from './loading'
+import Parent from './parent'
 import './App.css';
 
 const title = 'Necesito partir en componentes todo esto'
@@ -30,6 +31,7 @@ function App() {
         </List>
         <Link to = "https://reactjs.org/" openInNewTab>React Docs</Link>
         <Loading show = { true } />
+        <Parent />
         <Gretting />
         <Name />
         <ShowLastName />
