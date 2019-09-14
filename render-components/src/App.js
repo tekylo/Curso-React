@@ -13,6 +13,7 @@ import Link from './html/link'
 import Loading from './loading'
 import Parent from './parent'
 import Count from './contador/count'
+import String from './contador/string'
 import './App.css';
 
 const title = 'Necesito partir en componentes todo esto'
@@ -34,6 +35,7 @@ function App() {
         <Loading show = { true } />
         <Parent />
         <Count />
+        <String />
         <Gretting />
         <Name />
         <ShowLastName />

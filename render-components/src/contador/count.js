@@ -2,25 +2,25 @@ import React, { Component } from 'react';
 
 class Count extends Component {
     state = {
-        count: 0
+        count: 0,
     }
 
-    increment() {
+    increment = () => {
         const { count } = this.state
 
         this.setState( prevState => ({
-            count: this.state.count + 1
+            count: count + 1
         }))
 
         return count
       }
 
       
-    decrement() {
+    decrement = () => {
         const { count } = this.state
 
         this.setState( prevState => ({
-            count: this.state.count - 1
+            count: count - 1
         }))
 
         return count
@@ -32,9 +32,9 @@ class Count extends Component {
         
         return (
             <>
-            <button onClick={() => this.increment()}>Incrementar</button>
-            <button onClick={() => this.decrement()}>Decrementar</button>
-            <input value={ count }></input>
+            <button onClick={ this.increment }>Incrementar</button>
+            <div>{ count }</div>
+            <button onClick={ this.decrement }>Decrementar</button>
             </>
         )
     }
