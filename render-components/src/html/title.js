@@ -1,3 +1,12 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-export default props => <h1>{ props.children }</h1>
+class Title extends Component {
+    render() {
+        const { title } = this.props
+        
+        return <h1>{ title }</h1>
+    }
+}
+
+
+export default Title

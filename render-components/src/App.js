@@ -12,6 +12,7 @@ import ListItem from './html/listItem'
 import Link from './html/link'
 import Loading from './loading'
 import Parent from './parent'
+import Count from './contador/count'
 import './App.css';
 
 const title = 'Necesito partir en componentes todo esto'
@@ -32,6 +33,7 @@ function App() {
         <Link to = "https://reactjs.org/" openInNewTab>React Docs</Link>
         <Loading show = { true } />
         <Parent />
+        <Count />
         <Gretting />
         <Name />
         <ShowLastName />
