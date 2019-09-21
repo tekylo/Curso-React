@@ -45,7 +45,7 @@ class UsersContainer extends Component {
         return (
             <>
                 {show ? <UsersList /> : ''}
-                <button onClick = { () => this.setState({ show: !show })}>Mostrar/ocultar</button>
+                <button onClick = { () => this.setState({ show: !show }) }>Mostrar/ocultar</button>
             </>
         )
     }
