@@ -59,7 +59,7 @@ class ButtonJson extends Component {
         super(props)
         this.state = {
             tasks: '',
-            show: true
+            show: false
         }
     }
 
@@ -84,8 +84,9 @@ class ButtonJson extends Component {
 
         return (
             <>
-                {show ? tasks : ''}
+                
                 <button onClick = { this.handleClick }>Mostrar/ocultar</button>
+                {show ? tasks : ''}
                 <h2>2</h2>
                 <InputJson/>
                 <h2>3</h2>
