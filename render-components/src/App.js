@@ -15,6 +15,7 @@ import Parent from './parent'
 import Count from './contador/count'
 import String from './contador/string'
 import Users from './tema5/UsersContainer'
+import Task from './tema5/Task'
 import './App.css';
 
 const title = 'Necesito partir en componentes todo esto'
@@ -28,6 +29,8 @@ function App() {
         <h1>Tema 5</h1>
         <h2>1</h2>
         <Users/>
+        <h2>2</h2>
+        <Task/>
         <Title title = { title }/>
         <Text text = { text }/>
         <List>
