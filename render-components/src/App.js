@@ -18,6 +18,7 @@ import Users from './tema5/UsersContainer'
 import Task from './tema5/Task'
 import './App.css';
 import ButtonJson from './tema6/ButtonJson';
+import Login from './tema7/login';
 
 const title = 'Necesito partir en componentes todo esto'
 const text = 'Para ello puedo usar React que me permitirá poder reutilizar todos esos componentes. Para ello tengo que:'
@@ -27,6 +28,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <h1>Tema 7</h1>
+        <Login />
         <h1>Tema 6</h1>
         <h2>1</h2>
         <ButtonJson/>
