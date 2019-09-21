@@ -86,7 +86,6 @@ class ButtonJson extends Component {
             <>
                 
                 <button onClick = { this.handleClick }>Mostrar/ocultar</button>
-                {show ? tasks : ''}
                 <h2>2</h2>
                 <InputJson/>
                 <h2>3</h2>
