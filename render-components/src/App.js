@@ -23,6 +23,7 @@ import ListContainer from './tema8/ListContainer'
 import MySelect from './tema9/Myselect';
 import Myform from './tema9/MyForm';
 import FatherColor from './tema10/FatherColor';
+import Shop from './tema11/Shop';
 
 const title = 'Necesito partir en componentes todo esto'
 const text = 'Para ello puedo usar React que me permitirá poder reutilizar todos esos componentes. Para ello tengo que:'
@@ -32,6 +33,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <h1>Tema 11</h1>
+        <Shop/>
         <h1>Tema 10</h1>
         <FatherColor/>
         <h1>Tema 9</h1>
