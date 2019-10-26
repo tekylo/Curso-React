@@ -21,6 +21,7 @@ function ButtonStyle() {
 
         const ButtonWarning = styled(Button)`
         background: yellow
+        color: black
         `;
 
         const ButtonError = styled(Button)`
@@ -33,17 +34,16 @@ function ButtonStyle() {
   
     return (
       <div>
-          <ButtonRed/>
+        <ButtonRed/>
         <Button primary = {''}>Default</Button>
-        <Button primary = {'palevioletred'}>Default</Button>
-        <Button primary = {'white'}>Default</Button>
-        <Button primary = {'black'}>Default</Button>
-        <ButtonDefault/>
+        <Button >Default</Button>
+        <Button palevioletred >Default</Button>
+        <Button white>Default</Button>
         <ButtonDefault>Default</ButtonDefault>
         <ButtonSuccess>Success</ButtonSuccess>
-        <button>Warning</button>
-        <button>Error</button>
-        <button>Info</button>
+        <ButtonWarning>Warning</ButtonWarning>
+        <ButtonError>Error</ButtonError>
+        <ButtonInfo>Info</ButtonInfo>
       </div>
     );
   }
